@@ -14,8 +14,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "paths": {
+      "@/layout/*": ["component/layout/*"],
+      "@/ui/*": ["component/ui/*"],
+      "@/screen/*": ["component/screen/*"],
       "@/*": ["./*"]
     },
     "useDefineForClassFields": true,
