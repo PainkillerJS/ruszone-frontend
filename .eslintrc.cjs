@@ -33,11 +33,21 @@ module.exports = {
     'react/no-array-index-key': 0,
     'class-methods-use-this': 0,
     'no-param-reassign': 0,
-    'arrow-body-style': ['error', 'always'],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
 
     'import/no-extraneous-dependencies': [0, { devDependencies: true }],
     'import/order': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        '': 'never',
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ],
     'simple-import-sort/exports': 1,
     'simple-import-sort/imports': [
       1,
