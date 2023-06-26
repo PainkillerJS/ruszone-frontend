@@ -20,7 +20,7 @@ export interface UserStateType {
 
 export interface TokensType extends Record<CookieFieldEnum, string> {}
 
-export interface InitialState {
+export interface InitialUserStateType {
   user: UserStateType | null;
   isLoading: boolean;
 }
