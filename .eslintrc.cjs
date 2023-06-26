@@ -34,9 +34,10 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-param-reassign': 0,
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-
+    'no-underscore-dangle': [0],
     'import/no-extraneous-dependencies': [0, { devDependencies: true }],
     'import/order': 0,
+    'import/no-cycle': 0,
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -61,6 +62,8 @@ module.exports = {
           ['^'],
           // Internal packages.
           ['^@'],
+          // Local packages.
+          ['^@/'],
           // Side effect imports.
           ['^\\u0000'],
           // Parent imports.

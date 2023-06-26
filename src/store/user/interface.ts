@@ -5,6 +5,15 @@ export enum CookieFieldEnum {
   REFRESH_TOKEN = 'refreshToken'
 }
 
+export enum LocalStorageFieldEnum {
+  USER = 'user'
+}
+
+export enum MethodAuthEnum {
+  LOGIN = 'login',
+  REGISTER = 'register'
+}
+
 export interface UserStateType {
   email: string;
 }
