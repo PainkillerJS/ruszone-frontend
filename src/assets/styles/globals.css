@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply h-screen text-base text-black;
+  @apply h-screen text-base text-black bg-bg-color;
 }
 
 .disabled {

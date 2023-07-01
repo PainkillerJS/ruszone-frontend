@@ -23,6 +23,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     '@typescript-eslint/no-shadow': 0,
     '@typescript-eslint/no-unused-vars': 1,
+    '@typescript-eslint/no-unused-expressions': 'off',
     'consistent-return': 0,
     'react/function-component-definition': [0],
     'import/prefer-default-export': 0,
@@ -36,6 +37,13 @@ module.exports = {
     'no-param-reassign': 0,
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-underscore-dangle': [0],
+    'arrow-body-style': [0],
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        depth: 3
+      }
+    ],
     'import/no-extraneous-dependencies': [0, { devDependencies: true }],
     'import/order': 0,
     'import/no-cycle': 0,
@@ -58,7 +66,7 @@ module.exports = {
           // react
           ['react'],
           // next
-          ['next'],
+          ['^next'],
           // External packages.
           ['^'],
           // Internal packages.

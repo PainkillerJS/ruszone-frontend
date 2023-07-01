@@ -16,9 +16,9 @@
     "incremental": true,
     "baseUrl": "src",
     "paths": {
-      "@/layout/*": ["component/layout/*"],
-      "@/ui/*": ["component/ui/*"],
-      "@/screen/*": ["component/screen/*"],
+      "@/layouts/*": ["components/layouts/*"],
+      "@/ui/*": ["components/ui/*"],
+      "@/screens/*": ["components/screens/*"],
       "@/*": ["./*"]
     },
     "useDefineForClassFields": true,

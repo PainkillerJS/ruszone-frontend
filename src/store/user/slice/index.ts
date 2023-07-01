@@ -1,10 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { getStorageValue } from '@/packages/storage';
+
 import { checkAuth, login, register } from '../actions';
-import { InitialUserStateType } from '../interface';
+
+export interface UserStateType {
+  email: string;
+}
+
+export interface InitialUserStateType {
+  user: UserStateType | null;
+  isLoading: boolean;
+}
+
+const user = getStorageValue('user');
 
 const initialState: InitialUserStateType = {
-  user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user') as string) : null,
+  user: user ? JSON.parse(user as string) : null,
   isLoading: false
 };
 

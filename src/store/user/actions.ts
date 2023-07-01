@@ -1,10 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { errorCatch } from '@/api/helper';
-import { removeFromStorage } from '@/services/auth/helpers';
-import AuthService from '@/services/auth/service';
-
-import { AuthResponseType, EmailPasswordType, MethodAuthEnum } from './interface';
+import { errorCatch } from '@/packages/api/config/helper';
+import { removeFromStorage } from '@/packages/api/rest/auth/helpers';
+import AuthService from '@/packages/api/rest/auth/service';
+import { AuthResponseType, EmailPasswordType, MethodAuthEnum } from '@/packages/types';
 
 export const register = createAsyncThunk<AuthResponseType, EmailPasswordType>(
   'auth/register',

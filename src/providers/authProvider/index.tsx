@@ -7,7 +7,7 @@ import Cookies from 'js-cookie';
 
 import { useActions } from '@/hooks/useActions';
 import { useAuth } from '@/hooks/useAuth';
-import { getAccessToken } from '@/services/auth/helpers';
+import { getAccessToken } from '@/packages/api/rest/auth/helpers';
 import { CookieFieldEnum } from '@/store/user/interface';
 
 import type { ComponentAuthFieldsType } from './interface';

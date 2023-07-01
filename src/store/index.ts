@@ -2,24 +2,23 @@ import {
   FLUSH,
   PAUSE,
   PERSIST,
-  PersistConfig,
   persistReducer,
+  persistStore,
   PURGE,
   REGISTER,
   REHYDRATE
 } from 'redux-persist';
-import persistStore from 'redux-persist/es/persistStore';
-import storage from 'redux-persist/lib/storage';
 
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
+import { storage } from './configs/storage';
 import { userSlice } from './user/slice';
 
 const persistConfig = {
   key: 'ruszone',
   storage,
   whitelist: ['cart']
-} satisfies PersistConfig<unknown>;
+};
 
 const rootReducer = combineReducers({
   user: userSlice.reducer

@@ -1,11 +1,7 @@
 import type { NextPage } from 'next';
 
-const HomePage: NextPage = () => {
-  const a = 'in\nde\nx';
+import Home from '@/screens/home';
 
-  const b = (text: string) => text.split('\n').map((str) => <p>{str}</p>);
-
-  return <div>{b(a)}</div>;
-};
+const HomePage: NextPage = () => <Home />;
 
 export default HomePage;
